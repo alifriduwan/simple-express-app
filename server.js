@@ -8,7 +8,6 @@ app.get("/", (req, res) => {
 
 function logRequest(path) {
   console.log(`Request received for: ${path}`);
-  const unusedVar = "This is a smell";
 }
 
 app.listen(PORT, () => {
