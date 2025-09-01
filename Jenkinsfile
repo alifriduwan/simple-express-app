@@ -2,7 +2,8 @@ pipeline {
     agent any
 
         tools {
-        nodejs 'nodejs-lts'
+        nodejs 'NodeJS-24.7.0' 
+        jdk 'Temurin-17'
     }
 
     environment {
@@ -18,7 +19,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'npm install'
+                sh 'npm ci'
             }
         }
 
