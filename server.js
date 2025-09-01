@@ -21,11 +21,11 @@ function logRequest(path) {
   const unusedVar = "This is a smell";
 }
 
-function logResponse(path) {
-  // This function is a duplicate
-  console.log(`Request received for: ${path}`);
-  const unusedVar = "This is a smell";
-}
+// function logResponse(path) {
+//   // This function is a duplicate
+//   console.log(`Request received for: ${path}`);
+//   const unusedVar = "This is a smell";
+// }
 
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
