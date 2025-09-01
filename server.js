@@ -7,7 +7,12 @@ app.get("/", (req, res) => {
 });
 
 app.get("/health", (req, res) => {
-  res.json({ status: "ok", message: "Server is healthy!!!" });
+  res.json({ status: "ok", message: "Server is healthy" });
+});
+
+// โค้ดซ้ำซ้อนที่เพิ่มเข้ามาใหม่
+app.get("/status", (req, res) => {
+  res.json({ status: "ok", message: "Server is running" });
 });
 
 app.listen(PORT, () => {
